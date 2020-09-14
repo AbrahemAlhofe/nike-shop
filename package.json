@@ -1,0 +1,32 @@
+{
+  "name": "nike-shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "abrahem ali alhofe",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --mode=development --watch"
+  },
+  "devDependencies": {
+    "animejs": "^3.2.0",
+    "css-loader": "^4.3.0",
+    "html-webpack-plugin": "^4.4.1",
+    "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.0",
+    "pug-loader": "^2.4.0",
+    "pug-plain-loader": "^1.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "to-string-loader": "^1.1.6",
+    "ts-loader": "^8.0.3",
+    "tslib": "^2.0.1",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "parcel-plugin-inlinesvg": "^0.1.1",
+    "typeit": "^7.0.4"
+  }
+}

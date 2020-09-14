@@ -1,0 +1,31 @@
+// Scroll Bar
+.scroll {
+    &__bar {
+        background-color: var(--gray-300);
+        width: 5px;
+        height: 40vh;
+        border-radius: 10px;
+        transition: all .2s;
+        overflow: hidden;
+        position: relative;
+    }
+    &__thumbnail {
+        background-color: var(--gray-400);
+        width: 100%;
+        position: absolute;
+        transition: all .2s;
+    }
+}
+
+.scroll {
+    &__fraction {
+        font-family: "Cairo";
+        font-size: 2em;
+        height: 25vh;
+        color: var(--gray-400);
+    }
+    &__numerator {
+        font-size: 3em;
+        color: var(--gray-500);
+    }
+}
