@@ -5,10 +5,58 @@ html(lang="ar" dir='rtl')
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Nike Shop
     body
-        v-navbar
-        #app
-            v-scroll
-            v-descriptor
+        // =======================
+        // Navbar
+        // =======================
+        .navbar
+            .navbar__logo: img( src='./images/logo.png' )
             div
-                v-view
-                v-slider
+                .navbar__menu
+                    include ../icons/menu.svg
+
+                .navbar__actions
+                    span.navbar__search
+                        include ../icons/search.svg
+                    span.navbar__shopping-cart
+                        include ../icons/shopping-cart.svg
+
+                .navbar__sections
+                    span.navbar__section إصدارات جديدة
+                    span.navbar__section  رجالي
+                    span.navbar__section  نسائي
+                    span.navbar__section  أطفالي
+                        span.navbar__section  تشكيلة
+        #app
+            // =======================
+            // Scroll
+            // =======================
+            .scroll
+                .scroll__fraction
+                    span.scroll__numerator
+                    span.scroll__slash /
+                    span.scroll__denominator
+                .scroll__bar
+                    .scroll__thumbnail
+            // =======================
+            // Descriptor
+            // =======================
+            .descriptor
+                .descriptor__name
+                    .descriptor__background Nike
+                    span
+                .descriptor__description
+                .descriptor__footer
+                    .descriptor__buy-btn إشتري الان
+                    .descriptor__price
+                        span
+                        include ../icons/dollar-sign.svg
+            div
+                // =======================
+                // View
+                // =======================
+                .view: img.view__image
+
+                // =======================
+                // Slider
+                // =======================
+                .slider: .slider__slides
